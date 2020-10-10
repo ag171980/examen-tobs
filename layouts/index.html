@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    
-    
+
+
     <div class="container">
         <h2>Pricing Toggle 1</h2>
         <div class="toggle-menu">
-            <button class="button monthly">Monthly</button>
-            <button class="button annual">Annualy</button>
+            <input type="button" class="button monthly" id="month" value="month" />
+            <input type="button" class="button annual" id="year" value="year" />
         </div>
         <div class="container-prices">
             <div class="options-box">
@@ -26,8 +26,9 @@
                     <i class="fas fa-chart-pie"></i>
                 </div>
                 <div class="options-price">
-                    <p class="price">$39</p>
-                    <p>/Monthly</p>
+                    $<p class="price precioMes">39</p>
+                    <p class="precioAnio"></p>
+
                 </div>
                 <ul>
                     <li>1 Gb Diskspace</li>
@@ -44,8 +45,9 @@
                     <i class="fas fa-chart-line"></i>
                 </div>
                 <div class="options-price">
-                    <p class="price">$49</p>
-                    <p>/Monthly</p>
+                    $<p class="price precioMes">49</p>
+                    <p class="precioAnio"></p>
+
                 </div>
                 <ul>
                     <li>5 Gb Diskspace</li>
@@ -62,8 +64,9 @@
                     <i class="fas fa-city"></i>
                 </div>
                 <div class="options-price">
-                    <p class="price">$59</p>
-                    <p>/Monthly</p>
+                    $<p class="price precioMes">59</p>
+                    <p class="precioAnio"></p>
+
                 </div>
                 <ul>
                     <li>20 Gb Diskspace</li>
@@ -76,6 +79,7 @@
             </div>
         </div>
     </div>
+    <script src="/js/app.js"></script>
 </body>
 
 </html>
