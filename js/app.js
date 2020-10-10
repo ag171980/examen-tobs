@@ -1,5 +1,5 @@
-const month = document.getElementById('month').value;
-const year = document.getElementById('year').value;
+const monthly = document.getElementById('Monthly').value;
+const annually = document.getElementById('Annually').value;
 const priceMonth = document.getElementsByClassName('precioMes');
 const priceYear = document.getElementsByClassName('precioAnio');
 let PrecMonth = [];
@@ -17,8 +17,8 @@ for (let p = 0; p < priceYear.length; p++) {
     priceYear[p].className = 'off precioAnio';
 }
 
-document.getElementById('month').addEventListener('click', function () {
-    if (month == 'month') {
+document.getElementById('Monthly').addEventListener('click', function () {
+    if (monthly == 'Monthly') {
         for (let y = 0; y < priceYear.length; y++) {
             priceYear[y].className = 'off precioAnio';
         }
@@ -28,14 +28,14 @@ document.getElementById('month').addEventListener('click', function () {
         }
     }
 });
-document.getElementById('year').addEventListener('click', function () {
-    if (year == 'year') {
+document.getElementById('Annually').addEventListener('click', function () {
+    if (annually == 'Annually') {
         for (let m = 0; m < priceMonth.length; m++) {
             priceMonth[m].className = 'off precioMes';
         }
         for (let y = 0; y < priceYear.length; y++) {
             priceYear[y].className = 'on precioAnio';
-            priceYear[y].innerHTML = '<p class="price" >' + PrecAnual[y] + '</p><p class="text-price" >/Annualy</p>';
+            priceYear[y].innerHTML = '<p class="price" >' + PrecAnual[y] + '</p><p class="text-price" >/Annually</p>';
         }
     }
 });
